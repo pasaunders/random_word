@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>random string</title>
+</head>
+<body>
+    <p>Random Word (attempt #{{number}})</p>
+    <p>Word: {{word}}</p>
+    <form action="/random_word/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Generate">
+    </form>
+</body>
+</html>
